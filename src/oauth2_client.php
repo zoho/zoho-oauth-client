@@ -23,7 +23,7 @@ class OAuth2Client{
 	private $expires_in;
 
 	public function __construct(){
-		$ini_array = parse_ini_file("oauth_client_config.ini");
+		$ini_array = parse_ini_file("../config/oauth_client_config.ini");
 		
 		$this->authorize_url=$ini_array['Authorize_Url'];
 		$this->access_token_url=$ini_array['Access_Token_Url'];
